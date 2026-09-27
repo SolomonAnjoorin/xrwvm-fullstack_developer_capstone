@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Local environment and temporary files
+server/djangoapp/.env
+server/djangoapp/.env.save
+server/djangoenv/
+server/cookies.txt
+analyzereview

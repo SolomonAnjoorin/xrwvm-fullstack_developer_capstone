@@ -31,11 +31,17 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'soanjoorin-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
+    (
+        'soanjoorin-8000.theianext-0-labs-prod-misc-tools-us-east-0.'
+        'proxy.cognitiveclass.ai'
+    ),
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://soanjoorin-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
+    (
+        'https://soanjoorin-8000.theianext-0-labs-prod-misc-tools-us-east-0.'
+        'proxy.cognitiveclass.ai'
+    ),
     'http://localhost:8000',
     'http://127.0.0.1:8000',
 ]
@@ -70,7 +76,7 @@ ROOT_URLCONF = 'djangoproj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ 
+        'DIRS': [
             os.path.join(BASE_DIR, 'frontend/static'),
             os.path.join(BASE_DIR, 'frontend/build'),
             os.path.join(BASE_DIR, 'frontend/build/static'),
@@ -103,7 +109,10 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        (
+            'django.contrib.auth.password_validation.'
+            'UserAttributeSimilarityValidator'
+        ),
     },
     {
         'NAME':
@@ -152,4 +161,3 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build'),
     os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
-
